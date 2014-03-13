@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WhoRu</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+	</head>
+	<body>
+		<h1>{{ data.name }}</h1>
+		{% if data.email %}
+		<div>Email => {{ data.email }}</div>
+		{% endif %}
+
+		{% if len(interests) > 1 %}
+			<h3>Interests</h3>
+		{% endif %}
+		{% for interest in data.interests.other %}
+		<div>{{ interest }}</div>
+		{% endfor %}
+
+		<br/>
+		<div>Made by Grant Regimbal</div>
+		<br/>
+		<div>Powered by the <a href="https://ark.com/">Ark.com</a> Api.</div>
+	</body>
+</html>

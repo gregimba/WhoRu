@@ -1,0 +1,19 @@
+h1 {
+	left: 50%;
+	top: 25%;
+	text-align: center;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 64px;
+}
+
+div {
+	left: 50%;
+	text-align: center;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+form {
+	left: 50%;
+	text-align: center;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
